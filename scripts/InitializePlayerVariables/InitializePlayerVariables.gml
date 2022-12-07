@@ -1,7 +1,7 @@
 function InitializePlayerVariables(){
 	//engine
 	player_x = 2
-	player_y = 4
+	player_y = 3
 	
 	//graphics
 	player_x_offset = 4

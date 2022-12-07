@@ -41,14 +41,14 @@ function Teleport(){
 	else if _pipe_color == PIPE_WHITE then
 	{
 		current_stage += 1
-		_player_stage_x = 2
-		_player_stage_y = 2	
+		_player_stage_x = black_pipe_list[current_stage].x
+		_player_stage_y = black_pipe_list[current_stage].y
 	}
 	else if _pipe_color == PIPE_BLACK then
 	{
-		_player_stage_x = 13
-		_player_stage_y = 2
 		current_stage -= 1
+		_player_stage_x = white_pipe_list[current_stage].x
+		_player_stage_y = white_pipe_list[current_stage].y
 	}
 	
 	//set position based on stage + relative position

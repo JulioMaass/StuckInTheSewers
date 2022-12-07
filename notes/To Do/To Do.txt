@@ -1,12 +1,21 @@
-Make not optimized:
-	- Pink and black pipes
-	- Coin counter
-	- Game Ending / Retry
-	- Fade in
+Andy version:
+	OK - White and black pipes
+	OK - Pink and black pipes detection
 	- Fix fade bug
+	- Coin counter and display
+	- Review and optimize current implementations
+	- Fix Beach teleport
+	- Game ending cutscene
+	- Retry and reset coins
+	- Stage fade in (implement palette shader)
+	- Music and loop
+	- SFX
 
+Android Beta Version:
+	- Make a more smooth progression
+	- Save progress
+	- Implement ads (every 3 stages or 5 minutes, what happens first)
 
 Optimization:
-	- Simplify pipe enter/exit animation (use surface)
-	- Pink and black pipes detection
 	- Coin animation (don't read all tiles every frame)
+	- Simplify pipe enter/exit animation (use surface)
