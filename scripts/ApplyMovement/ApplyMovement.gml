@@ -24,7 +24,7 @@ function ApplyMovement(){
 	//code for pipe destiny
 	var	_tileset_x = _next_tile_type % 16,
 		_tileset_y = floor(_next_tile_type / 16),
-		_tile_is_pipe = _tileset_x >= 10 and _tileset_x <= 13 and _tileset_y <= 5
+		_tile_is_pipe = _tileset_x >= 10 and _tileset_x <= 13 and _tileset_y <= 7
 	if _tile_is_pipe then
 	{
 		var _pipe_direction = _tileset_x,
@@ -41,7 +41,7 @@ function ApplyMovement(){
 			SetStepAnimation(dir_x, dir_y, STEP_TYPE_ENTER)
 			
 			//turn on fade out
-			if _pipe_color == PIPE_PINK or _pipe_color == PIPE_BLACK then
+			if _pipe_color == PIPE_WHITE or _pipe_color == PIPE_BLACK then
 			{
 				fade_frame = 20
 			}

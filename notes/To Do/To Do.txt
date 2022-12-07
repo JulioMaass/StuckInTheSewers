@@ -1,0 +1,12 @@
+Make not optimized:
+	- Pink and black pipes
+	- Coin counter
+	- Game Ending / Retry
+	- Fade in
+	- Fix fade bug
+
+
+Optimization:
+	- Simplify pipe enter/exit animation (use surface)
+	- Pink and black pipes detection
+	- Coin animation (don't read all tiles every frame)

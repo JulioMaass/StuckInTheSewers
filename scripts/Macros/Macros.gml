@@ -21,8 +21,10 @@
 #macro PIPE_RED 1
 #macro PIPE_YELLOW 2
 #macro PIPE_BLUE 3
-#macro PIPE_PINK 4
+#macro PIPE_WHITE 4
 #macro PIPE_BLACK 5
+#macro PIPE_PINK 6
+#macro PIPE_BROWN 7
 
 //animation
 #macro STEP_FRAMES 8

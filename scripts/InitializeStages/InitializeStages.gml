@@ -7,8 +7,12 @@ function InitializeStages(){
 	world_stage_size_x = room_width / STAGE_PIXEL_SIZE
 	world_stage_size_y = room_height / STAGE_PIXEL_SIZE
 	
-	
-	
+	//create list of white and black pipes
+	//white_pipe_list = {};
+	//black_pipe_list = {};
+	//var _stage_coordinates = GetStageCoordinates(current_stage),
+	//	_stage_tile_x = _stage_coordinates[0] * STAGE_TILE_SIZE,
+	//	_stage_tile_y = _stage_coordinates[1] * STAGE_TILE_SIZE
 	//for (var _x = 0; _x < STAGE_TILE_SIZE; _x += 1)
 	//{
 	//	for (var _y = 0; _y < STAGE_TILE_SIZE; _y += 1)
@@ -16,9 +20,8 @@ function InitializeStages(){
 	//		var _tile_x = _x + _stage_tile_x,
 	//			_tile_y = _y + _stage_tile_y,
 	//			_tile_type = tilemap_get(tilemap_id, _tile_x, _tile_y)
-	//		if _tile_type == 5 then
+	//		if _tile_type == 5
 	//		{
-	//			draw_sprite(sprCoin, frame/6, _tile_x * TILE_SIZE, _tile_y * TILE_SIZE)
 	//		}
 	//	}
 	//}
