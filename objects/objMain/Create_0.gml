@@ -4,9 +4,12 @@
 // initialize camera/window
 InitializeCamera()
 
-//initialization
+//game initializations
 InitializeStages()
 InitializePlayerVariables()
+
+//initialize visuals
+InitializeFont()
 
 frame = 0
 paused = false

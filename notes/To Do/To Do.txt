@@ -2,14 +2,20 @@ Andy version:
 	OK - White and black pipes
 	OK - Pink and black pipes detection
 	OK - Fix fade bug
-	- Coin counter and display
+	OK - Coin counter and display
+	- Implement app icon
+	- Remove GM splash screen
 	- Review and optimize current implementations
+	- Update naming conventions to match MMDB
 	- Fix Beach teleport
 	- Game ending cutscene
 	- Retry and reset coins
 	- Stage fade in (implement palette shader)
 	- Music and loop
 	- SFX
+
+Other:
+	- Display stage names/numbers
 
 Android Beta Version:
 	- Make a more smooth progression
