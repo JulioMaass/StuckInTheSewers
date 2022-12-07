@@ -3,14 +3,14 @@ Andy version:
 	OK - Pink and black pipes detection
 	OK - Fix fade bug
 	OK - Coin counter and display
-	- Implement app icon
-	- Remove GM splash screen
+	OK (need to test) - Implement app icon
+	OK (need to test) - Remove GM splash screen
+	- Stage fade in (implement palette shader)
 	- Review and optimize current implementations
 	- Update naming conventions to match MMDB
 	- Fix Beach teleport
 	- Game ending cutscene
 	- Retry and reset coins
-	- Stage fade in (implement palette shader)
 	- Music and loop
 	- SFX
 

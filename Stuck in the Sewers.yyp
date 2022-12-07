@@ -4,6 +4,7 @@
   "name": "Stuck in the Sewers",
   "resources": [
     {"id":{"name":"sprTilesetOriginal","path":"sprites/sprTilesetOriginal/sprTilesetOriginal.yy",},"order":4,},
+    {"id":{"name":"sprSplashArtBeach","path":"sprites/sprSplashArtBeach/sprSplashArtBeach.yy",},"order":14,},
     {"id":{"name":"sprButtonRight","path":"sprites/sprButtonRight/sprButtonRight.yy",},"order":11,},
     {"id":{"name":"sprButtonDown","path":"sprites/sprButtonDown/sprButtonDown.yy",},"order":9,},
     {"id":{"name":"Macros","path":"scripts/Macros/Macros.yy",},"order":3,},
@@ -22,6 +23,7 @@
     {"id":{"name":"sprCoin","path":"sprites/sprCoin/sprCoin.yy",},"order":5,},
     {"id":{"name":"sprButtonUp","path":"sprites/sprButtonUp/sprButtonUp.yy",},"order":8,},
     {"id":{"name":"sprTileset","path":"sprites/sprTileset/sprTileset.yy",},"order":3,},
+    {"id":{"name":"sprPaletteShades","path":"sprites/sprPaletteShades/sprPaletteShades.yy",},"order":15,},
     {"id":{"name":"GetStageCoordinates","path":"scripts/GetStageCoordinates/GetStageCoordinates.yy",},"order":0,},
     {"id":{"name":"sprMrMouse","path":"sprites/sprMrMouse/sprMrMouse.yy",},"order":2,},
     {"id":{"name":"sprPicoFont","path":"sprites/sprPicoFont/sprPicoFont.yy",},"order":13,},
