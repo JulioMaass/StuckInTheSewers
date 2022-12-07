@@ -1,7 +1,7 @@
 function CheckToGetCoin(_tile_x, _tile_y){
 	
 	var _tile_type = tilemap_get(tilemap_id, _tile_x, _tile_y)
-	if _tile_type == 5 then
+	if _tile_type == 5 
 	{
 		coins += 1
 		tilemap_set(tilemap_id, 1, _tile_x, _tile_y)

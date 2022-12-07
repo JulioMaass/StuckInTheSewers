@@ -1,7 +1,7 @@
 Andy version:
 	OK - White and black pipes
 	OK - Pink and black pipes detection
-	- Fix fade bug
+	OK - Fix fade bug
 	- Coin counter and display
 	- Review and optimize current implementations
 	- Fix Beach teleport

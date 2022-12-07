@@ -16,7 +16,7 @@ for (var _x = 0; _x < STAGE_TILE_SIZE; _x += 1)
 		var _tile_x = _x + _stage_tile_x,
 			_tile_y = _y + _stage_tile_y,
 			_tile_type = tilemap_get(tilemap_id, _tile_x, _tile_y)
-		if _tile_type == 5 then
+		if _tile_type == 5 
 		{
 			draw_sprite(sprCoin, frame/6, _tile_x * TILE_SIZE, _tile_y * TILE_SIZE)
 		}
@@ -24,9 +24,9 @@ for (var _x = 0; _x < STAGE_TILE_SIZE; _x += 1)
 }
 
 //draw character
-if step_type == STEP_TYPE_JUMP then
+if step_type == STEP_TYPE_JUMP 
 {
-	if fade_frame == 0 then
+	if fade_frame == 0 
 	{
 		var _player_sprite_x = player_x * TILE_SIZE + player_x_offset + step_offset_x,
 			_player_sprite_y = player_y * TILE_SIZE + player_y_offset + step_offset_y
@@ -44,57 +44,57 @@ else
 		_height = 13
 	
 	//sprite clipping
-	if step_dir_y == -1 then
+	if step_dir_y == -1 
 	{
 		//up
-		if step_type == STEP_TYPE_ENTER then
+		if step_type == STEP_TYPE_ENTER 
 		{
 			_player_sprite_y = player_y * TILE_SIZE + player_y_offset + 11
 			_top = 10 - step_frame
 		}
-		else if step_type == STEP_TYPE_EXIT then
+		else if step_type == STEP_TYPE_EXIT 
 		{
 			_player_sprite_y = player_y * TILE_SIZE + player_y_offset + step_frame + 1
 			_height = 10 - step_frame
 		}
 	}
-	else if step_dir_y == 1 then
+	else if step_dir_y == 1 
 	{
 		//down
-		if step_type == STEP_TYPE_ENTER then
+		if step_type == STEP_TYPE_ENTER 
 		{
 			_player_sprite_y = player_y * TILE_SIZE + player_y_offset - step_frame - 1
 			_height = 4 + step_frame
 		}
-		else if step_type == STEP_TYPE_EXIT then
+		else if step_type == STEP_TYPE_EXIT 
 		{
 			_player_sprite_y = player_y * TILE_SIZE + player_y_offset + 3
 			_top = 4 + step_frame
 		}
 	}
-	else if step_dir_x == -1 then
+	else if step_dir_x == -1 
 	{
 		//left
-		if step_type == STEP_TYPE_ENTER then
+		if step_type == STEP_TYPE_ENTER 
 		{
 			_player_sprite_x = player_x * TILE_SIZE + 12 + step_frame
 			_width = 4 + step_frame
 		}
-		else if step_type == STEP_TYPE_EXIT then
+		else if step_type == STEP_TYPE_EXIT 
 		{
 			_player_sprite_x = player_x * TILE_SIZE + 8
 			_left = 4 + step_frame
 		}
 	}
-	else if step_dir_x == 1 then
+	else if step_dir_x == 1 
 	{
 		//right
-		if step_type == STEP_TYPE_ENTER then
+		if step_type == STEP_TYPE_ENTER 
 		{
 			_player_sprite_x = player_x * TILE_SIZE - 4 - step_frame
 			_width = 4 + step_frame
 		}
-		else if step_type == STEP_TYPE_EXIT then
+		else if step_type == STEP_TYPE_EXIT 
 		{
 			_player_sprite_x = player_x * TILE_SIZE
 			_left = 4 + step_frame
@@ -105,7 +105,7 @@ else
 
 
 //mask surface
-if fade_frame > 0 then
+if fade_frame > 0 
 {
 	if !surface_exists(mask_surface) {mask_surface = surface_create(128, 228)}
 	surface_set_target(mask_surface)
@@ -115,7 +115,7 @@ if fade_frame > 0 then
 	
 	var _circle_x = (player_x % STAGE_TILE_SIZE) * TILE_SIZE + 4,
 		_circle_y = (player_y % STAGE_TILE_SIZE) * TILE_SIZE + 4
-	draw_circle(_circle_x, _circle_y, fade_frame * 6, false)
+	draw_circle(_circle_x, _circle_y, (fade_frame-1) * 6, false)
 	gpu_set_blendmode(bm_normal)
 	surface_reset_target()	
 	

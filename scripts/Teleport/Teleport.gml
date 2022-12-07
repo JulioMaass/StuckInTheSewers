@@ -1,12 +1,12 @@
 function Teleport(){
-	if step_frame != 0 or fade_frame != 0 then {return}
+	if step_frame != 0 or fade_frame != 0  {return}
 	
 	var _tile_type = tilemap_get(tilemap_id, player_x, player_y),
 		_tileset_x = _tile_type % 16,
 		_tileset_y = floor(_tile_type / 16),
 		_tile_is_pipe = _tileset_x >= 10 and _tileset_x <= 13 and _tileset_y <= 7
 
-	if !_tile_is_pipe then {return}
+	if !_tile_is_pipe  {return}
 
 	var _pipe_direction = _tileset_x,
 		_pipe_color = _tileset_y
@@ -17,34 +17,34 @@ function Teleport(){
 		_pipe_is_vertical = _pipe_direction == PIPE_UP or _pipe_direction == PIPE_DOWN
 
 	//apply teleport to relative position
-	if _pipe_color == PIPE_GREEN then
+	if _pipe_color == PIPE_GREEN 
 	{
-		if _pipe_is_vertical then { _player_stage_y = 15 - _player_stage_y }
+		if _pipe_is_vertical  { _player_stage_y = 15 - _player_stage_y }
 							 else { _player_stage_x = 15 - _player_stage_x }
 	}
-	else if _pipe_color == PIPE_RED then
+	else if _pipe_color == PIPE_RED 
 	{
-		if _pipe_is_vertical then { _player_stage_x = 15 - _player_stage_x }
+		if _pipe_is_vertical  { _player_stage_x = 15 - _player_stage_x }
 							 else { _player_stage_y = 15 - _player_stage_y }
 	}
-	else if _pipe_color == PIPE_YELLOW then
+	else if _pipe_color == PIPE_YELLOW 
 	{
 		_player_stage_x = 15 - _player_stage_x
 		_player_stage_y = 15 - _player_stage_y
 	}
-	else if _pipe_color == PIPE_BLUE then
+	else if _pipe_color == PIPE_BLUE 
 	{
 		var _old_player_x = _player_stage_x
 		_player_stage_x = 15 - _player_stage_y
 		_player_stage_y = _old_player_x
 	}
-	else if _pipe_color == PIPE_WHITE then
+	else if _pipe_color == PIPE_WHITE 
 	{
 		current_stage += 1
 		_player_stage_x = black_pipe_list[current_stage].x
 		_player_stage_y = black_pipe_list[current_stage].y
 	}
-	else if _pipe_color == PIPE_BLACK then
+	else if _pipe_color == PIPE_BLACK 
 	{
 		current_stage -= 1
 		_player_stage_x = white_pipe_list[current_stage].x
@@ -59,7 +59,7 @@ function Teleport(){
 		player_y = _player_stage_y + _stage_y * STAGE_TILE_SIZE
 	
 	//reposition camera
-	if _pipe_color == PIPE_WHITE or _pipe_color == PIPE_BLACK then
+	if _pipe_color == PIPE_WHITE or _pipe_color == PIPE_BLACK 
 	{
 		var _camera_x = _stage_x * STAGE_PIXEL_SIZE,
 			_camera_y = _stage_y * STAGE_PIXEL_SIZE
@@ -71,10 +71,10 @@ function Teleport(){
 	var _tile_type = tilemap_get(tilemap_id, player_x, player_y),
 	_pipe_direction = _tile_type % 16
 	
-	if		_pipe_direction = PIPE_UP then		{dir_y = -1}
-	else if _pipe_direction = PIPE_DOWN then	{dir_y = 1}
-	else if _pipe_direction = PIPE_LEFT then	{dir_x = -1}
-	else if _pipe_direction = PIPE_RIGHT then	{dir_x = 1}
+	if		_pipe_direction = PIPE_UP 		{dir_y = -1}
+	else if _pipe_direction = PIPE_DOWN 	{dir_y = 1}
+	else if _pipe_direction = PIPE_LEFT 	{dir_x = -1}
+	else if _pipe_direction = PIPE_RIGHT 	{dir_x = 1}
 	
 	SetStepAnimation(dir_x, dir_y, STEP_TYPE_EXIT)
 	player_x += dir_x

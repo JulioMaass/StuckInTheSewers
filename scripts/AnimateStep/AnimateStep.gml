@@ -1,5 +1,5 @@
 function AnimateStep(){
-	if step_frame > 0 then
+	if step_frame > 0 
 	{
 		//calculate offset
 		var _jump_height = GetJumpHeight()
@@ -15,20 +15,16 @@ function AnimateStep(){
 		step_offset_y = 0
 		step_type = STEP_TYPE_JUMP
 	}
-	if fade_frame > 0 then
-	{
-		fade_frame -= 1
-	}
 }
 
 function GetJumpHeight(){
 	//bypass if animation is not a jump
-	if step_type != STEP_TYPE_JUMP then {return 0}
+	if step_type != STEP_TYPE_JUMP  {return 0}
 	
 	//set jump height
 	var _jump_height = 0
-	if step_frame >= 3 and step_frame <= 6 then			{_jump_height = -2}
-	else if step_frame >= 2 and step_frame <= 7 then 	{_jump_height = -1}
+	if step_frame >= 3 and step_frame <= 6 			{_jump_height = -2}
+	else if step_frame >= 2 and step_frame <= 7  	{_jump_height = -1}
 	else												{_jump_height =  0}
 	
 	return _jump_height

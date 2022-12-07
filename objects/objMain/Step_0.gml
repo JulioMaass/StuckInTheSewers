@@ -1,14 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if keyboard_check_pressed(ord("Q")) or keyboard_check_pressed(ord("W")) then
+if keyboard_check_pressed(ord("Q")) or keyboard_check_pressed(ord("W")) 
 {
 	paused = false
 }
 
-if paused == false then
+if paused == false 
 {
-	frame += 1
+	UpdateFrame()
 	Teleport()
 	GetInput()
 	CalculateDir()
@@ -16,7 +16,7 @@ if paused == false then
 	AnimateStep()
 }
 
-if keyboard_check_pressed(ord("Q")) then
+if keyboard_check_pressed(ord("Q")) 
 {
 	paused = true
 }

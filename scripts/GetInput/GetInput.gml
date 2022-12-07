@@ -1,5 +1,5 @@
 function GetInput(){
-	if step_frame > 0 or fade_frame > 0 then 
+	if step_frame > 0 or fade_frame > 0  
 	{
 		input_up = false
 		input_down = false
