@@ -1,10 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-shader_set(shdPalette);
-shader_set_uniform_f(shadeUniform, shade);
-texture_set_stage(paletteUniform, paletteTexture);
-
 //general info
 var _stage_coordinates = GetStageCoordinates(current_stage),
 	_stage_tile_x = _stage_coordinates[0] * STAGE_TILE_SIZE,
@@ -111,7 +107,7 @@ else
 //mask surface
 if fade_frame > 0 
 {
-	if !surface_exists(mask_surface) {mask_surface = surface_create(128, 228)}
+	SurfaceCheckOrCreate("mask_surface", 128, 128)
 	surface_set_target(mask_surface)
 	draw_set_color(c_black)
 	draw_rectangle(0, 0, STAGE_PIXEL_SIZE, STAGE_PIXEL_SIZE, false)
@@ -126,4 +122,3 @@ if fade_frame > 0
 	draw_surface(mask_surface, _stage_pixel_x, _stage_pixel_y)
 }
 
-shader_reset();

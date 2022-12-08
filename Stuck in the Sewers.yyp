@@ -26,6 +26,7 @@
     {"id":{"name":"sprPaletteShadesSample","path":"sprites/sprPaletteShadesSample/sprPaletteShadesSample.yy",},"order":15,},
     {"id":{"name":"GetStageCoordinates","path":"scripts/GetStageCoordinates/GetStageCoordinates.yy",},"order":0,},
     {"id":{"name":"sprMrMouse","path":"sprites/sprMrMouse/sprMrMouse.yy",},"order":2,},
+    {"id":{"name":"SurfaceCheckOrCreate","path":"scripts/SurfaceCheckOrCreate/SurfaceCheckOrCreate.yy",},"order":1,},
     {"id":{"name":"sprPicoFont","path":"sprites/sprPicoFont/sprPicoFont.yy",},"order":13,},
     {"id":{"name":"objMain","path":"objects/objMain/objMain.yy",},"order":0,},
     {"id":{"name":"sprPaletteFromGrayscale","path":"sprites/sprPaletteFromGrayscale/sprPaletteFromGrayscale.yy",},"order":16,},

@@ -1,6 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+//draw upper screen with palette effect
+shader_set(shdPalette);
+shader_set_uniform_f(shadeUniform, shade);
+texture_set_stage(paletteUniform, paletteTexture);
+draw_surface(application_surface, 0, 0);
+shader_reset();
+
+//draw lower screen
 draw_set_color(c_black)
 draw_rectangle(0, 128, 128, 228, false)
 
