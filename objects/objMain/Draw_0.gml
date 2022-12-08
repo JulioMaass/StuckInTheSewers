@@ -1,6 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+shader_set(shdPalette);
+shader_set_uniform_f(shadeUniform, shade);
+texture_set_stage(paletteUniform, paletteTexture);
+
 //general info
 var _stage_coordinates = GetStageCoordinates(current_stage),
 	_stage_tile_x = _stage_coordinates[0] * STAGE_TILE_SIZE,
@@ -121,3 +125,5 @@ if fade_frame > 0
 	
 	draw_surface(mask_surface, _stage_pixel_x, _stage_pixel_y)
 }
+
+shader_reset();
