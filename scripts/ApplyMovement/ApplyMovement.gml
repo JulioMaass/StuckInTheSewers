@@ -11,13 +11,15 @@ function ApplyMovement(){
 		_next_tile_type = tilemap_get(tilemap_id, _next_x, _next_y)
 	
 	//code for free destiny
-	var _tile_is_free = _next_tile_type == 1 or _next_tile_type == 5
+	var _tile_is_free = _next_tile_type == 1 or _next_tile_type == 5  or _next_tile_type == 115
 	if _tile_is_free 
 	{
 		player_x = _next_x
 		player_y = _next_y
 		CheckToGetCoin(player_x, player_y)
 		SetStepAnimation(dir_x, dir_y, STEP_TYPE_JUMP)
+		//sfx
+		audio_play_sound(sndStep, 7, false)
 		return
 	}
 	
@@ -45,6 +47,9 @@ function ApplyMovement(){
 			{
 				fade_frame = 20
 			}
+			//sfx
+			if _pipe_color == PIPE_WHITE	{audio_play_sound(sndVictory, 9, false)}
+			else							{audio_play_sound(sndPipe, 9, false)}
 		}
 	}
 }

@@ -5,16 +5,22 @@ Andy version:
 	OK - Coin counter and display
 	OK (need to test) - Implement app icon
 	OK (need to test) - Remove GM splash screen
-	- Stage fade in (implement palette shader)
-	- Review and optimize current implementations
-	- Update naming conventions to match MMDB
-	- Fix Beach teleport
-	- Game ending cutscene
-	- Retry and reset coins
-	- Music and loop
+	OK - Include beach stage with no transition stage (so all stages use pipes)
 	- SFX
+	- Music and loop
+	- Stage fade in (implement palette shader)
+	
+Android beta with monetization
+	- Implement ads
+	- Make more levels, with smooth difficulty ramp
+	- Game auto saves
 
 Other:
+	- Update naming conventions to match MMDB
+	- Review and optimize current implementations
+	- Game ending cutscene
+	- Retry and reset coins
+	- Fix Beach teleport
 	- Display stage names/numbers
 
 Android Beta Version:
