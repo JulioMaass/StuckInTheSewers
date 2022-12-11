@@ -3,7 +3,9 @@
   "resourceVersion": "1.6",
   "name": "Stuck in the Sewers",
   "resources": [
+    {"id":{"name":"AdMob","path":"extensions/AdMob/AdMob.yy",},"order":0,},
     {"id":{"name":"sprTilesetOriginal","path":"sprites/sprTilesetOriginal/sprTilesetOriginal.yy",},"order":4,},
+    {"id":{"name":"Room_AdMob","path":"rooms/Room_AdMob/Room_AdMob.yy",},"order":0,},
     {"id":{"name":"sprSplashArtBeach","path":"sprites/sprSplashArtBeach/sprSplashArtBeach.yy",},"order":14,},
     {"id":{"name":"sprButtonRight","path":"sprites/sprButtonRight/sprButtonRight.yy",},"order":11,},
     {"id":{"name":"sprButtonDown","path":"sprites/sprButtonDown/sprButtonDown.yy",},"order":9,},
@@ -17,6 +19,7 @@
     {"id":{"name":"SetStepAnimation","path":"scripts/SetStepAnimation/SetStepAnimation.yy",},"order":5,},
     {"id":{"name":"InitializePlayerVariables","path":"scripts/InitializePlayerVariables/InitializePlayerVariables.yy",},"order":1,},
     {"id":{"name":"UpdateFrame","path":"scripts/UpdateFrame/UpdateFrame.yy",},"order":7,},
+    {"id":{"name":"Obj_AdMob","path":"objects/Obj_AdMob/Obj_AdMob.yy",},"order":0,},
     {"id":{"name":"InitializeCamera","path":"scripts/InitializeCamera/InitializeCamera.yy",},"order":0,},
     {"id":{"name":"CheckToGetCoin","path":"scripts/CheckToGetCoin/CheckToGetCoin.yy",},"order":6,},
     {"id":{"name":"ApplyMovement","path":"scripts/ApplyMovement/ApplyMovement.yy",},"order":2,},
@@ -27,6 +30,7 @@
     {"id":{"name":"sprButtonUp","path":"sprites/sprButtonUp/sprButtonUp.yy",},"order":8,},
     {"id":{"name":"sprTileset","path":"sprites/sprTileset/sprTileset.yy",},"order":3,},
     {"id":{"name":"sprPaletteShadesSample","path":"sprites/sprPaletteShadesSample/sprPaletteShadesSample.yy",},"order":15,},
+    {"id":{"name":"AdScripts","path":"scripts/AdScripts/AdScripts.yy",},"order":1,},
     {"id":{"name":"GetStageCoordinates","path":"scripts/GetStageCoordinates/GetStageCoordinates.yy",},"order":0,},
     {"id":{"name":"sprMrMouse","path":"sprites/sprMrMouse/sprMrMouse.yy",},"order":2,},
     {"id":{"name":"SurfaceCheckOrCreate","path":"scripts/SurfaceCheckOrCreate/SurfaceCheckOrCreate.yy",},"order":1,},
@@ -64,8 +68,13 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"roomMain","path":"rooms/roomMain/roomMain.yy",},},
+    {"roomId":{"name":"Room_AdMob","path":"rooms/Room_AdMob/Room_AdMob.yy",},},
   ],
   "Folders": [
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"AdMob","folderPath":"folders/AdMob.yy","order":8,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Extensions","folderPath":"folders/AdMob/Extensions.yy","order":0,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Objects","folderPath":"folders/AdMob/Objects.yy","order":1,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Rooms","folderPath":"folders/AdMob/Rooms.yy","order":2,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Notes","folderPath":"folders/Notes.yy","order":6,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Objects","folderPath":"folders/Objects.yy","order":3,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Rooms","folderPath":"folders/Rooms.yy","order":4,},
@@ -85,7 +94,12 @@
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","isScaled":true,"compressFormat":"bz2","loadType":"default","directory":"","autocrop":true,"border":2,"mipsToGenerate":0,"groupParent":null,"targets":-1,},
   ],
-  "IncludedFiles": [],
+  "IncludedFiles": [
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"AdMob Extension.docx","CopyToMask":-1,"filePath":"datafiles",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"AdMob Extension.pdf","CopyToMask":-1,"filePath":"datafiles",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"AdMob Extension.docx","CopyToMask":-1,"filePath":"datafiles",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"AdMob Extension.pdf","CopyToMask":-1,"filePath":"datafiles",},
+  ],
   "MetaData": {
     "IDEVersion": "2022.11.0.54",
   },

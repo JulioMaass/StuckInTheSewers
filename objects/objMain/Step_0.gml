@@ -20,3 +20,7 @@ if keyboard_check_pressed(ord("Q"))
 {
 	paused = true
 }
+
+show_debug_message(adTimer);
+show_debug_message(adStageCounter);
+show_debug_message(adsShown);

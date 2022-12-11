@@ -31,3 +31,8 @@ mask_surface = noone;
 
 //play music
 audio_play_sound(musMain, 10, true)
+
+//ads stuff
+adTimer = 0;
+adStageCounter = 0;
+adsShown = 0;

@@ -43,6 +43,9 @@ function Teleport(){
 		current_stage += 1
 		_player_stage_x = black_pipe_list[current_stage].x
 		_player_stage_y = black_pipe_list[current_stage].y
+		
+		//ads
+		CheckToShowAd();
 	}
 	else if _pipe_color == PIPE_BLACK 
 	{
