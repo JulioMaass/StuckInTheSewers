@@ -10,6 +10,7 @@
     {"id":{"name":"sprButtonRight","path":"sprites/sprButtonRight/sprButtonRight.yy",},"order":11,},
     {"id":{"name":"sprButtonDown","path":"sprites/sprButtonDown/sprButtonDown.yy",},"order":9,},
     {"id":{"name":"Macros","path":"scripts/Macros/Macros.yy",},"order":3,},
+    {"id":{"name":"roomCombination","path":"rooms/roomCombination/roomCombination.yy",},"order":2,},
     {"id":{"name":"To Do","path":"notes/To Do/To Do.yy",},"order":0,},
     {"id":{"name":"GetInput","path":"scripts/GetInput/GetInput.yy",},"order":0,},
     {"id":{"name":"UpdatePlayerSprite","path":"scripts/UpdatePlayerSprite/UpdatePlayerSprite.yy",},"order":4,},
@@ -68,6 +69,7 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"roomCombination","path":"rooms/roomCombination/roomCombination.yy",},},
     {"roomId":{"name":"roomTests","path":"rooms/roomTests/roomTests.yy",},},
     {"roomId":{"name":"roomMain","path":"rooms/roomMain/roomMain.yy",},},
     {"roomId":{"name":"Room_AdMob","path":"rooms/Room_AdMob/Room_AdMob.yy",},},
