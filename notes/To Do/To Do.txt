@@ -6,12 +6,12 @@ Andy version:
 	OK (need to test) - Implement app icon
 	OK (need to test) - Remove GM splash screen
 	OK - Include beach stage with no transition stage (so all stages use pipes)
-	- SFX
-	- Music and loop
+	OK - SFX
+	OK - Music and loop
 	- Stage fade in (implement palette shader)
 	
 Android beta with monetization
-	- Implement ads
+	OK - Implement ads
 	- Make more levels, with smooth difficulty ramp
 	- Game auto saves
 
