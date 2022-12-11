@@ -30,7 +30,7 @@ paletteTexture = sprite_get_texture(sprPaletteFromGrayscale, 0);
 mask_surface = noone;
 
 //play music
-audio_play_sound(musMain, 10, true)
+//audio_play_sound(musMain, 10, true)
 
 //ads stuff
 adTimer = 0;

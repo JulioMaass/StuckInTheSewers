@@ -43,6 +43,7 @@
     {"id":{"name":"sndVictory","path":"sounds/sndVictory/sndVictory.yy",},"order":3,},
     {"id":{"name":"sprMademouselle","path":"sprites/sprMademouselle/sprMademouselle.yy",},"order":7,},
     {"id":{"name":"InitializeStages","path":"scripts/InitializeStages/InitializeStages.yy",},"order":2,},
+    {"id":{"name":"roomTests","path":"rooms/roomTests/roomTests.yy",},"order":1,},
     {"id":{"name":"sprMousefredini","path":"sprites/sprMousefredini/sprMousefredini.yy",},"order":6,},
     {"id":{"name":"Teleport","path":"scripts/Teleport/Teleport.yy",},"order":3,},
     {"id":{"name":"sprGamepad","path":"sprites/sprGamepad/sprGamepad.yy",},"order":12,},
@@ -67,6 +68,7 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"roomTests","path":"rooms/roomTests/roomTests.yy",},},
     {"roomId":{"name":"roomMain","path":"rooms/roomMain/roomMain.yy",},},
     {"roomId":{"name":"Room_AdMob","path":"rooms/Room_AdMob/Room_AdMob.yy",},},
   ],
