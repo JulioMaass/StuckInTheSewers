@@ -40,6 +40,7 @@ function Teleport(){
 	}
 	else if _pipe_color == PIPE_WHITE 
 	{
+		if current_stage == 0 {current_stage = 0}
 		current_stage += 1
 		_player_stage_x = black_pipe_list[current_stage].x
 		_player_stage_y = black_pipe_list[current_stage].y
@@ -82,5 +83,5 @@ function Teleport(){
 	SetStepAnimation(dir_x, dir_y, STEP_TYPE_EXIT)
 	player_x += dir_x
 	player_y += dir_y
-	CheckToGetCoin(player_x, player_y)
+	CheckToGetItem(player_x, player_y)
 }

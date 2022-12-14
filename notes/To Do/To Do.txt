@@ -14,6 +14,11 @@ Android beta with monetization
 	OK - Implement ads
 	- Make more levels, with smooth difficulty ramp
 	- Game auto saves
+	- Check if ads ID is working
+	
+Monetized version
+	- Add stuff to buy with money
+	- Add rewarded ads
 
 Other:
 	- Update naming conventions to match MMDB

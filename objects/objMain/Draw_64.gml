@@ -33,3 +33,8 @@ else				{draw_sprite(sprButtonRight, 0,	64-16+32,	128+2+32)}
 draw_rectangle(0, 128, 38, 136, false)
 draw_set_color(c_white)
 draw_text(2, 130, "COINS:" + string(coins))
+
+draw_set_color(c_black)
+draw_rectangle(100, 128, 128, 136, false)
+draw_set_color(c_white)
+draw_text(102, 130, "KEYS:" + string(keys))

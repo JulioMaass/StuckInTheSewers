@@ -8,7 +8,7 @@ var _stage_coordinates = GetStageCoordinates(current_stage),
 	_stage_pixel_x = _stage_coordinates[0] * STAGE_PIXEL_SIZE,
 	_stage_pixel_y = _stage_coordinates[1] * STAGE_PIXEL_SIZE
 
-//draw coins
+//draw animated items
 for (var _x = 0; _x < STAGE_TILE_SIZE; _x += 1)
 {
 	for (var _y = 0; _y < STAGE_TILE_SIZE; _y += 1)
@@ -16,9 +16,25 @@ for (var _x = 0; _x < STAGE_TILE_SIZE; _x += 1)
 		var _tile_x = _x + _stage_tile_x,
 			_tile_y = _y + _stage_tile_y,
 			_tile_type = tilemap_get(tilemap_id, _tile_x, _tile_y)
-		if _tile_type == 5 
+		if _tile_type == 5
 		{
 			draw_sprite(sprCoin, frame/6, _tile_x * TILE_SIZE, _tile_y * TILE_SIZE)
+		}
+		if _tile_type == 6
+		{
+			draw_sprite(sprChest, 0, _tile_x * TILE_SIZE, _tile_y * TILE_SIZE)
+		}
+		else if _tile_type == 8
+		{
+			draw_sprite(sprKey, frame/6, _tile_x * TILE_SIZE, _tile_y * TILE_SIZE)
+		}
+		if _tile_type == 9
+		{
+			draw_sprite(sprEmptyTile, 0, _tile_x * TILE_SIZE, _tile_y * TILE_SIZE)
+		}
+		else if _tile_type == 24
+		{
+			draw_sprite(sprPadlock, 0, _tile_x * TILE_SIZE, _tile_y * TILE_SIZE)
 		}
 	}
 }

@@ -22,4 +22,5 @@ function InitializePlayerVariables(){
 	
 	//stats
 	coins = 0
+	keys = 0
 }
