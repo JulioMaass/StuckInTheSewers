@@ -1,38 +1,51 @@
-Andy version:
-	OK - White and black pipes
-	OK - Pink and black pipes detection
-	OK - Fix fade bug
-	OK - Coin counter and display
-	OK (need to test) - Implement app icon
-	OK (need to test) - Remove GM splash screen
-	OK - Include beach stage with no transition stage (so all stages use pipes)
-	OK - SFX
-	OK - Music and loop
-	- Stage fade in (implement palette shader)
-	
-Android beta with monetization
-	OK - Implement ads
-	- Make more levels, with smooth difficulty ramp
-	- Game auto saves
-	- Check if ads ID is working
-	
-Monetized version
-	- Add stuff to buy with money
+Android version:
+	Core loop:
+		- Stage select
+		- Retry and reset coins
+		- Game auto saves
+		- Achievements (all coins, speed, no pipe repeat)
+	Polish:
+		- Fix splash screen
+		- Stage fade in (implement palette shader)
+		- VFX for chest opening and padlock
+		- Fix Beach teleport
+		- Game ending cutscene
+	UI:
+		- Display stage numbers
+		- Improve UI polish (coin counter, etc)
+	Monetization:
+		- Check if ads ID is working / Fix placeholder ads
+		- Pay to remove ads
+
+HTML5 version:
+	- Landscape format
+
+Monetized version (?):
+	- Add stuff to buy with money (new stages/chars, skins, whole speedrun)
 	- Add rewarded ads
+	- Unlockables: New worlds unlocked with coin thresholds (~100 coins for world 2, etc)
 
 Other:
 	- Update naming conventions to match MMDB
 	- Review and optimize current implementations
-	- Game ending cutscene
-	- Retry and reset coins
-	- Fix Beach teleport
-	- Display stage names/numbers
-
-Android Beta Version:
-	- Make a more smooth progression
-	- Save progress
-	- Implement ads (every 3 stages or 5 minutes, what happens first)
+	- Leaderboard
 
 Optimization:
 	- Coin animation (don't read all tiles every frame)
 	- Simplify pipe enter/exit animation (use surface)
+
+Done:
+	OK - White and black pipes
+	OK - White and black pipes detection
+	OK - Fix fade bug
+	OK - Coin counter and display
+	OK - Include beach stage with no transition stage (so all stages use pipes)
+	OK - SFX
+	OK - Music and loop
+	OK - Make a more smooth progression
+	OK - Save progress
+	OK - Implement ads (every 3 stages or 5 minutes, what happens first)
+	OK - Implement app icon
+	OK - Remove GM splash screen
+	OK - Implement ads
+	OK - Make more levels, with smooth difficulty curve
